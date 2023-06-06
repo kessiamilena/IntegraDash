@@ -37,6 +37,10 @@ aside {
     align-items: center;
 }
 
+aside #logo-alt {
+    display: none;
+}
+
 #logo {
     width: 273px;
     height: 164px;
@@ -79,6 +83,7 @@ form button {
 
 .txt_claro {
     color: var(--textoClaro);
+    margin-left: 5px;
 }
 
 a {
@@ -98,6 +103,7 @@ a {
 
 .checkbox {
     padding-bottom: 20px;
+    display: flex;
 }
 
 .pass {
@@ -110,4 +116,77 @@ a {
     right: 10px;
     cursor: pointer;
     width: 18px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%;
+        background-image: url(../img/Fundo\ dash.png);
+        background-repeat: no-repeat;
+        background-size: 100% 70%;
+    }
+
+    aside #logo-alt {
+        display: flex;
+        width: 35vw;
+        margin-top: 40%;
+    }
+
+    aside #logo {
+        display: none;
+    }
+
+    input[type=email], input[type=password], form button {
+        width: 230px;
+        height: 38px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .label_form {
+        font-size: 15px;
+    }
+
+    .dev_b {
+        width: 200px;
+        height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .esq_senha {
+        font-size: 12px;
+    }
+
+    .txt_claro {
+        font-size: 12px;
+    }
+
+    .olho {
+        top: 24px;
+        width: 13px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    aside #logo-alt {
+        width: 35vw;
+        margin-top: 50%;
+    }
+
+    input[type=email], input[type=password], form button {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    aside #logo-alt {
+        width: 35vw;
+        margin-top: 60%;
+    }
 }
