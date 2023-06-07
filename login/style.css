@@ -132,7 +132,7 @@ a {
 
     aside #logo-alt {
         display: flex;
-        width: 35vw;
+        max-width: 260px;
         margin-top: 40%;
     }
 
@@ -141,10 +141,15 @@ a {
     }
 
     input[type=email], input[type=password], form button {
-        width: 230px;
+        width: 250px;
         height: 38px;
         font-size: 12px;
         margin-bottom: 10px;
+    }
+
+    input[type=email]::placeholder, input[type=password]::placeholder, label.txt_claro {
+        color: #6D7996;
+        font-weight: 500;
     }
 
     .label_form {
@@ -161,6 +166,11 @@ a {
         font-size: 12px;
     }
 
+    .esq_senha span {
+        color: rgb(32, 26, 26);
+        font-weight: 600;
+    }
+
     .txt_claro {
         font-size: 12px;
     }
@@ -175,18 +185,20 @@ a {
 
 @media screen and (max-width: 600px){
     aside #logo-alt {
-        width: 35vw;
+        min-width: 250px;
         margin-top: 50%;
     }
 
     input[type=email], input[type=password], form button {
         width: 250px;
+        
     }
 }
 
 @media screen and (max-width: 400px) {
     aside #logo-alt {
-        width: 35vw;
+        min-width: 250px;
         margin-top: 60%;
     }
+
 }
