@@ -58,7 +58,7 @@ form {
     margin-top: 10px;
 }
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password], input[type=text] {
     width: 300px;
     height: 38px;
     border-color: var(--bordaInput);
@@ -189,7 +189,7 @@ a {
         margin-top: 50%;
     }
 
-    input[type=email], input[type=password], form button {
+    input[type=email], input[type=password], input[type=text], form button {
         width: 250px;
         
     }
